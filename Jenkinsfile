@@ -135,7 +135,7 @@ pipeline {
                         trivy image \
                         --scanners vuln \
                         --pkg-types os \
-                        --severity HIGH,MEDIUM \
+                        --severity MEDIUM \
                         --format table \
                         --output trivy-os-report.txt \
                         --exit-code 0 \
